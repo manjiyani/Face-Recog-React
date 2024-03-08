@@ -20,7 +20,7 @@ class SignInPage extends React.Component {
 
     onSignIn = (event) => {
         event.preventDefault();
-        fetch("http://localhost:3001/signin/", {
+        fetch("https://face-recog-api-g1p6.onrender.com/signin/", {
             method: "post",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({
